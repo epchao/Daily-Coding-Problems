@@ -6,12 +6,13 @@ k = 17
 number_list = [10, 15, 3, 7]
 
 def solver(list, num):
-checker = False
+    checker = False
     for number in list:
         for number2 in list:
             if number + number2 == num:
                 checker = True
-                return True
+    if checker == True:
+        return True
     if checker == False:
         return False
 
